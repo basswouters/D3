@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="UTF-8"/>
+	    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	    <title>D3 / Databeleving / Blok 2</title>
+
+	    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+	    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+	</head>
+
+	<body>
+		<div id="container">
+			<h1>D3 Databeleving</h1>
+			<p>Alle data die in onderstaande grafieken gebruikt wordt, komt van mijn honkbalteam af. Wij houden elke wedstrijd de statistieken bij en aan het einde van het jaar krijg je dan een overzicht met je slaggemiddelde, aantal keer drie slag, vier wijd etc. </p>
+
+			<h2>MIJN HONKBAL STATISTIEKEN</h1>
+			<div class="entry">
+				<p>Hieronder zie je mijn statistieken van het afgelopen seizoen. <br>
+					<strong>BB</strong> Vier wijd -
+					<strong>K</strong> Drie slag -
+					<strong>TBase</strong> Total bases -
+					<strong>PA</strong> Plate appearances -
+					<strong>AB</strong> At Bats -
+					<strong>AVG</strong> Average -
+					<strong>Slug</strong> Hits meer dan 1 honk -
+					<strong> Runs</strong> Aantal punten -
+					<strong>RBI</strong> Aantal punten binnen geslagen -
+				</p>
+				<div id="mijnStat"></div>
+			</div>
+
+			<h2>ONBASE EN AANTAL PUNTEN</h2>
+
+			<div class="entry">
+				<p>Bij een honkbal wedstrijd kom je op de honken, dit aantal noem je de total bases. In deze grafiek kun je het verschil zien tussen de total bases en het aantal runs dat deze speler gescoord heeft.</p>
+				<div class="buttons">
+					<button id="tbaseBtn">TOTAL BASES</button>
+					<button id="runsBtn">RUNS</button>
+				</div>
+				<div id="tbase"></div>
+			</div>
+
+			<h2>DRIE SLAG EN 4 WIJD</h2>
+			<div class="entry">
+				<div class="buttons">
+					<button id="drieslag">DRIE SLAG</button>
+					<button id="vierwijd">VIER WIJD</button>
+				</div>
+				<div id="stats">
+				</div>
+			</div>
+
+			<h2>SLAGGEMIDDELDE</h2>
+			<div class="entry">
+				<p>Het slaggemiddelde van de 5 beste spelers van mijn honkbal team. De donut is maximaal is een getal van 1000, normaal gesproken is dit 1.000. De slaggemiddeldes zijn normaal dus .500 of .230. Het is echter voor mij makkelijker om het in hele getallen te gebruiken voor deze donut
+				<div class="buttons">
+					<button id="sjors">Sjors</button>
+					<button id="thijs">Thijs</button>
+					<button id="thies">Thies</button>
+					<button id="bram">Bram</button>
+					<button id="bwino">Bwino</button>
+					<button id="dirk">Dirk</button>
+				</div>
+				<div id="donut"></div>
+			</div>
+		</div>
+
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/d3.js"></script>
+		<script src="js/barchart.js"></script>
+		<script src="js/tbase.js"></script>
+		<script src="js/mijnstat.js"></script>
+		<script src="js/donut.js"></script>
+	</body>
+</html>
